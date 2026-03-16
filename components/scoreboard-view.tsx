@@ -73,11 +73,11 @@ export function ScoreboardView({ session, sessionId }: ScoreboardViewProps) {
       </div>
     );
   }
-
+  console.log("DATA", data);
   const { matches, players, total_pot } = data;
   const finishedMatches = matches.filter((m) => m.finished).length;
   const totalMatches = matches.length;
-  console.log(matches);
+  console.log("MATCHES", matches);
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -253,13 +253,12 @@ export function ScoreboardView({ session, sessionId }: ScoreboardViewProps) {
                         return (
                           <TableCell
                             key={player.entry_id}
-                            className={`text-center ${
-                              isExact
-                                ? 'bg-primary/20 font-bold text-primary'
-                                : isCorrectResult
-                                  ? 'bg-accent/20 text-accent-foreground'
-                                  : ''
-                            }`}
+                            className={`text-center ${isExact
+                              ? 'bg-primary/20 font-bold text-primary'
+                              : isCorrectResult
+                                ? 'bg-accent/20 text-accent-foreground'
+                                : ''
+                              }`}
                           >
                             <div className="flex items-center justify-center gap-1">
                               {pred.pred_home_goals}-{pred.pred_away_goals}
