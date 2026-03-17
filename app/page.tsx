@@ -33,7 +33,7 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="mb-12 text-center">
@@ -41,8 +41,8 @@ export default async function HomePage() {
             Football Score Predictor
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground text-pretty">
-            Predict match scores, compete with friends, and win the pot. 
-            3 points for exact score, 1 point for correct result.
+            Predict match scores, compete with friends, and win the pot.
+            2 points for exact score, 1 point for correct result.
           </p>
         </div>
 

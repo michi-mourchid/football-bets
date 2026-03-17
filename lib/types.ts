@@ -4,7 +4,7 @@ export interface Session {
   title: string;
   session_date: string;
   stake_per_player: number;
-  state: 'DRAFT' | 'OPEN' | 'LOCKED' | 'COMPLETED';
+  state: "DRAFT" | "OPEN" | "LOCKED" | "COMPLETED";
   created_at: string;
 }
 
@@ -115,7 +115,7 @@ export interface SubmitPredictionsRequest {
 
 // Scoring constants
 export const POINTS = {
-  CORRECT_SCORE: 3,
+  CORRECT_SCORE: 2,
   CORRECT_RESULT: 1,
   WRONG: 0,
 } as const;
